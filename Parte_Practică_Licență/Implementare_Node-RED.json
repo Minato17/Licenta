@@ -1,0 +1,23 @@
+[
+    {
+        "id": "b1c1e014c057bcc0",
+        "type": "file in",
+        "z": "c93ec07bb918f5c8",
+        "g": "d39cd20a3af41bfe",
+        "name": "Read File",
+        "filename": "/home/nick/Desktop/secventa_Unghiuri.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 1000,
+        "y": 700,
+        "wires": [
+            [
+                "1d2803ee1085a877"
+            ]
+        ]
+    }
+]
