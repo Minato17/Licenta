@@ -28,13 +28,16 @@ Lucrare de Licenta - Brat robotic
 ## 🚀 Instruire și rulare
 
 ### 1. Arduino
-- Se încarcă fișierul `Brat_Robotic.ino` în Arduino IDE
+- Se încarcă fișierul `Brat_Robotic.ino` în Arduino IDE, iar celelalte doua fișiere să se afle în același folder
 - Se conectează servo-motoarele conform pinilor configurați
 
 ### 2. Raspberry Pi
 - Se instalează Node-RED și OpenCV
-- Se pornește flow-ul din `node-red/flow.json`
-- Se rulează scriptul `python/camera_detectie.py` pentru detecția vizuală
+- Se pornește Node-RED. Pe un flow nou se incarcă fisierul 'Implementare_Node-RED.json'
+- După încărcarea implementarii în Node-RED se configurează porturile pentru comunicația intre Arduino și Pi
+- Se configurează locația fișierelor .json pentru încarcarea sau salvarea secvențelor
+- Se configurează adresa locației fișierului pentru activarea camerei web
+- Se apasă butonul 'Deploy' din Node-RED, iar implementarea este activă
 
 ### 3. Node-RED Dashboard
 - Accesează interfața grafică prin `http://<ip_raspberry>:1880/ui`
@@ -44,9 +47,10 @@ Lucrare de Licenta - Brat robotic
 
 ## 📎 Exemple de utilizare
 
-- Apasă "Start Detectare" → se lansează scriptul de culoare
-- Obiect roșu detectat → trimite codul în Node-RED → acțiune automată braț
-- "Salvează Secvență" → creează fișier JSON pentru redare ulterioară
+- Se apasă butonul 'Deploy' din Node-RED, iar implementarea este activă
+- Se apasă butonul 'Pornire' și se activează secvența salvată
+- Controlul servo motoarelor din slide-uri
+- "Încarcare secvență" → încarca fișierul JSON cu secvențele salvate
 
 ---
 
